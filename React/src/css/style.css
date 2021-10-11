@@ -90,6 +90,7 @@ button:hover {
         position: static;
         margin: auto;
         margin-top: 3rem;
+        transform: none;
     }
 
 }

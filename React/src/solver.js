@@ -25,39 +25,59 @@ const Solver = () => {
         }) input`;
         document.querySelector(selector)?.focus();
     }, [data]);
+    function handleChange(evt) {
+        const { row, col } = evt.target.dataset;
+        if (evt.nativeEvent.inputType === 'deleteContentBackward') {
+            setData((data) => {
+                let newData = data.map((val) => val.slice());
+                newData[row][col] = 0;
+                return newData;
+            });
+            return false;
+        }
+        if (/\d/.test(evt.target.value) === false) {
+            return false;
+        }
+        setData((data) => {
+            let newData = data.map((val) => val.slice());
+            newData[row][col] = Number(evt.target.value.slice(-1));
+            return newData;
+        });
+    }
+    function handleKeydown(evt) {
+        let code = evt.code.toLowerCase();
+        let [row, col] = focusCoords.current;
+        if (code.startsWith('arrow')) {
+            if (code === 'arrowup') {
+                if (row - 1 < 0) {
+                    return false;
+                }
+                focusCoords.current = [row - 1, col];
+            } else if (code === 'arrowdown') {
+                if (row + 1 > 8) {
+                    return false;
+                }
+                focusCoords.current = [row + 1, col];
+            } else if (code === 'arrowleft') {
+                if (col - 1 < 0) {
+                    return false;
+                }
+                focusCoords.current = [row, col - 1];
+            } else if (code === 'arrowright') {
+                if (col + 1 > 8) {
+                    return false;
+                }
+                focusCoords.current = [row, col + 1];
+            }
+            setData(data.slice());
+        }
+    }
     return (
         <React.Fragment>
             <div
                 ref={container}
                 className='container animate__animated animate__fast'
-                onKeyDown={(evt) => {
-                    let code = evt.code.toLowerCase();
-                    let [row, col] = focusCoords.current;
-                    if (code.startsWith('arrow')) {
-                        if (code === 'arrowup') {
-                            if (row - 1 < 0) {
-                                return false;
-                            }
-                            focusCoords.current = [row - 1, col];
-                        } else if (code === 'arrowdown') {
-                            if (row + 1 > 8) {
-                                return false;
-                            }
-                            focusCoords.current = [row + 1, col];
-                        } else if (code === 'arrowleft') {
-                            if (col - 1 < 0) {
-                                return false;
-                            }
-                            focusCoords.current = [row, col - 1];
-                        } else if (code === 'arrowright') {
-                            if (col + 1 > 8) {
-                                return false;
-                            }
-                            focusCoords.current = [row, col + 1];
-                        }
-                        setData(data.slice());
-                    }
-                }}
+                onKeyDown={handleKeydown}
             >
                 {data.map((val, row) => {
                     return (
@@ -87,29 +107,7 @@ const Solver = () => {
                                                 data-row={row}
                                                 data-col={col}
                                                 value={val === 0 ? '' : val}
-                                                onChange={(evt) => {
-                                                    if (
-                                                        /\d/.test(
-                                                            evt.target.value
-                                                        ) === false
-                                                    ) {
-                                                        return;
-                                                    }
-                                                    const { row, col } =
-                                                        evt.target.dataset;
-                                                    setData((data) => {
-                                                        let newData = data.map(
-                                                            (val) => val.slice()
-                                                        );
-                                                        newData[row][col] =
-                                                            Number(
-                                                                evt.target.value.slice(
-                                                                    -1
-                                                                )
-                                                            );
-                                                        return newData;
-                                                    });
-                                                }}
+                                                onChange={handleChange}
                                             />
                                         </div>
                                     </div>

@@ -9,7 +9,7 @@ body {
     background-color: azure;
 }
 h1 {
-    color: chartreuse;
+    color: #79F767;
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -42,14 +42,16 @@ h1 {
 input {
     display: block;
     width: 100%;
+    caret-color: transparent;
     text-align: center;
+    font-size: 2rem;
     background-color: transparent;
 }
 .danger{
     border-color: red;
 }
 .active{
-    background-color: transparent!important;
+    background-color: rgb(105, 252, 187,0.5) !important;
 }
 .row:nth-child(3n) {
     border-bottom: .3rem solid black;

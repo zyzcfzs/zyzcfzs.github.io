@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
-const Root = () => {
-    return (
-        <React.StrictMode>
-            <App></App>
-        </React.StrictMode>
-    );
-};
-ReactDOM.render(<Root></Root>, document.getElementById('root'));
+import App from './App';
+
+import "./css/background.css";
+ReactDOM.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>,
+    document.getElementById('root')
+);

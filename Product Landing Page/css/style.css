@@ -1,0 +1,227 @@
+:root {
+    --background-col: #eeeeee;
+    --icon-color: #ffa500;
+    --button-color: #f1c40f;
+    --gray-background: #dddddd;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    background-color: var(--background-col);
+}
+header {
+    position: fixed;
+    height: 4.5rem;
+    display: flex;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: var(--background-col);
+}
+.header-img-container {
+    width: 25%;
+    display: flex;
+    margin-left: 3rem;
+    align-items: center;
+}
+#header-img {
+    width: 100%;
+    display: block;
+}
+#nav-bar {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+.menu-item {
+    color: #000000;
+}
+main {
+    margin-top: 5.5rem;
+}
+h1 {
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input {
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#email {
+    padding: 0.2rem 0.5rem;
+    width: 15rem;
+    font-size: larger;
+    margin-bottom: 0.5rem;
+}
+#submit {
+    background-color: var(--button-color);
+    padding: 0.2rem 0.7rem;
+    border-radius: 0.2rem;
+    font-weight: 900;
+    border: none;
+}
+.card-btn:hover,
+#submit:hover {
+    background-color: var(--icon-color);
+}
+#video {
+    width: 40rem;
+    height: 25rem;
+    margin: 4rem 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.description {
+    margin-top: 3rem !important;
+    width: 70%;
+    margin: auto;
+}
+.description-item {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+.content {
+    flex-basis: 85%;
+}
+.icon {
+    display: flex;
+    color: var(--icon-color);
+    align-items: center;
+}
+.main-content {
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.sub-content {
+    line-height: 1.2;
+}
+.cards {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    flex-basis: 32%;
+    border-radius: 0.2rem;
+    border: 1px solid #000000;
+}
+.card-title {
+    background-color: var(--gray-background);
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+}
+.card-price {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem auto;
+}
+.card-info {
+    width: 50%;
+    margin: auto;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card-btn {
+    background-color: var(--button-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0.5rem;
+}
+footer {
+    width: 70%;
+    padding: 1rem;
+    margin: 2rem auto 0;
+    background-color: var(--gray-background);
+}
+footer > ul {
+    width: 30%;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.3rem;
+}
+footer a {
+    color: #000000;
+}
+.copyright {
+    text-align: end;
+    color: rgba(0, 0, 0, 0.6);
+}
+@media screen and (max-width: 1030px) {
+    :root {
+        font-size: small;
+    }
+    .description {
+        width: 90%;
+    }
+    footer,
+    .cards {
+        width: 100%;
+    }
+}
+@media all and (max-width: 576px) {
+    :root {
+        font-size: xx-small;
+    }
+    #header {
+        display: block;
+        height: auto;
+    }
+    .header-img-container {
+        width: 100%;
+        height: 5rem;
+        margin-left: 0;
+    }
+    #header-img {
+        width: 80%;
+        margin: auto;
+    }
+    #nav-bar{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .nav-link{
+        display: block;
+        font-size: 14px;
+        margin-bottom: .5rem;
+    }
+    main{
+        margin-top: 10.5rem;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        width: 80%;
+        margin:auto;
+        margin-bottom: 1rem;
+    }
+    #video{
+        width: 100%;
+    }
+    .icon{
+        display: none;
+    }
+    .content{
+        flex-basis: 100%;
+        text-align: center;
+    }
+}

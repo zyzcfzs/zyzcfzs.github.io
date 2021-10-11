@@ -1,0 +1,15 @@
+.weather{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.weather div{
+    margin-bottom: 1rem;
+}
+.weather span {
+  color: blue;
+  cursor: pointer;
+}
+.weather .status{
+    margin-bottom: 0px;
+}

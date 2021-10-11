@@ -1,0 +1,588 @@
+:root {
+    --text-color: #333333;
+    --sub-color:#373737;
+    --background-color: #eeeeee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#main {
+    background-color: var(--background-color);
+    width: 99%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 10px 1rem 10px;
+}
+#main .header #title {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#main .header .subtitle {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 2rem;
+}
+#image {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+#main .header figure {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+#main .header figcaption{
+    text-align: center;
+    font-size: medium;
+    color:var(--sub-color);
+}
+.tribute-info{
+    width: 40%;
+    margin: 4rem auto;
+}
+@media screen and (max-width:900px) {
+    .tribute-info{
+        width: 80vw;
+    }
+    .quote-area{
+        width:90vw;
+    }
+    #main{
+        width: initial;
+        margin: 0px auto;
+    }
+    #image{
+        max-width: 90%;
+    }
+}
+.tribute-title{
+    text-align: center;
+    font-weight: bolder;
+    color:var(--text-color);
+    margin-bottom: 3rem;
+}
+.tributes{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.tributes .time{
+    font-weight: bolder;
+    font-size: large;
+}
+.tribute-item{
+    font-size: medium;
+    color:var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+article{
+  width:45%;
+  margin: -1rem auto 3rem;
+  color:var(--sub-color);
+  line-height: 1.5;
+}
+article .quote{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-weight: 900;
+    color:var(--text-color)
+}
+:root {
+    --text-color: #333333;
+    --sub-color:#373737;
+    --background-color: #eeeeee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#main {
+    background-color: var(--background-color);
+    width: 99%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 10px 1rem 10px;
+}
+#main .header #title {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#main .header .subtitle {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 2rem;
+}
+#image {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+#main .header figure {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+#main .header figcaption{
+    text-align: center;
+    font-size: medium;
+    color:var(--sub-color);
+}
+.tribute-info{
+    width: 40%;
+    margin: 4rem auto;
+}
+@media screen and (max-width:900px) {
+    .tribute-info{
+        width: 80vw;
+    }
+    .quote-area{
+        width:90vw;
+    }
+    #main{
+        width: initial;
+        margin: 0px auto;
+    }
+    #image{
+        max-width: 90%;
+    }
+}
+.tribute-title{
+    text-align: center;
+    font-weight: bolder;
+    color:var(--text-color);
+    margin-bottom: 3rem;
+}
+.tributes{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.tributes .time{
+    font-weight: bolder;
+    font-size: large;
+}
+.tribute-item{
+    font-size: medium;
+    color:var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+article{
+  width:45%;
+  margin: -1rem auto 3rem;
+  color:var(--sub-color);
+  line-height: 1.5;
+}
+article .quote{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-weight: 900;
+    color:var(--text-color)
+}
+:root {
+    --text-color: #333333;
+    --sub-color:#373737;
+    --background-color: #eeeeee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#main {
+    background-color: var(--background-color);
+    width: 99%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 10px 1rem 10px;
+}
+#main .header #title {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#main .header .subtitle {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 2rem;
+}
+#image {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+#main .header figure {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+#main .header figcaption{
+    text-align: center;
+    font-size: medium;
+    color:var(--sub-color);
+}
+.tribute-info{
+    width: 40%;
+    margin: 4rem auto;
+}
+@media screen and (max-width:900px) {
+    .tribute-info{
+        width: 80vw;
+    }
+    .quote-area{
+        width:90vw;
+    }
+    #main{
+        width: initial;
+        margin: 0px auto;
+    }
+    #image{
+        max-width: 90%;
+    }
+}
+.tribute-title{
+    text-align: center;
+    font-weight: bolder;
+    color:var(--text-color);
+    margin-bottom: 3rem;
+}
+.tributes{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.tributes .time{
+    font-weight: bolder;
+    font-size: large;
+}
+.tribute-item{
+    font-size: medium;
+    color:var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+article{
+  width:45%;
+  margin: -1rem auto 3rem;
+  color:var(--sub-color);
+  line-height: 1.5;
+}
+article .quote{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-weight: 900;
+    color:var(--text-color)
+}
+:root {
+    --text-color: #333333;
+    --sub-color:#373737;
+    --background-color: #eeeeee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#main {
+    background-color: var(--background-color);
+    width: 99%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 10px 1rem 10px;
+}
+#main .header #title {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#main .header .subtitle {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 2rem;
+}
+#image {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+#main .header figure {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+#main .header figcaption{
+    text-align: center;
+    font-size: medium;
+    color:var(--sub-color);
+}
+.tribute-info{
+    width: 40%;
+    margin: 4rem auto;
+}
+@media screen and (max-width:900px) {
+    .tribute-info{
+        width: 80vw;
+    }
+    .quote-area{
+        width:90vw;
+    }
+    #main{
+        width: initial;
+        margin: 0px auto;
+    }
+    #image{
+        max-width: 90%;
+    }
+}
+.tribute-title{
+    text-align: center;
+    font-weight: bolder;
+    color:var(--text-color);
+    margin-bottom: 3rem;
+}
+.tributes{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.tributes .time{
+    font-weight: bolder;
+    font-size: large;
+}
+.tribute-item{
+    font-size: medium;
+    color:var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+article{
+  width:45%;
+  margin: -1rem auto 3rem;
+  color:var(--sub-color);
+  line-height: 1.5;
+}
+article .quote{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-weight: 900;
+    color:var(--text-color)
+}
+:root {
+    --text-color: #333333;
+    --sub-color:#373737;
+    --background-color: #eeeeee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#main {
+    background-color: var(--background-color);
+    width: 99%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 10px 1rem 10px;
+}
+#main .header #title {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#main .header .subtitle {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 2rem;
+}
+#image {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+#main .header figure {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+#main .header figcaption{
+    text-align: center;
+    font-size: medium;
+    color:var(--sub-color);
+}
+.tribute-info{
+    width: 40%;
+    margin: 4rem auto;
+}
+@media screen and (max-width:900px) {
+    .tribute-info{
+        width: 80vw;
+    }
+    .quote-area{
+        width:90vw;
+    }
+    #main{
+        width: initial;
+        margin: 0px auto;
+    }
+    #image{
+        max-width: 90%;
+    }
+}
+.tribute-title{
+    text-align: center;
+    font-weight: bolder;
+    color:var(--text-color);
+    margin-bottom: 3rem;
+}
+.tributes{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.tributes .time{
+    font-weight: bolder;
+    font-size: large;
+}
+.tribute-item{
+    font-size: medium;
+    color:var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+article{
+  width:45%;
+  margin: -1rem auto 3rem;
+  color:var(--sub-color);
+  line-height: 1.5;
+}
+article .quote{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-weight: 900;
+    color:var(--text-color)
+}
+:root {
+    --text-color: #333333;
+    --sub-color:#373737;
+    --background-color: #eeeeee;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#main {
+    background-color: var(--background-color);
+    width: 99%;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    padding: 2rem 10px 1rem 10px;
+}
+#main .header #title {
+    font-size: 3rem;
+    color: var(--text-color);
+    text-align: center;
+}
+#main .header .subtitle {
+    text-align: center;
+    color: var(--sub-color);
+    margin-bottom: 2rem;
+}
+#image {
+    max-width: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+#main .header figure {
+    border-radius: 0.5rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
+}
+#main .header figcaption{
+    text-align: center;
+    font-size: medium;
+    color:var(--sub-color);
+}
+.tribute-info{
+    width: 40%;
+    margin: 4rem auto;
+}
+@media screen and (max-width:900px) {
+    .tribute-info{
+        width: 80vw;
+    }
+    .quote-area{
+        width:90vw;
+    }
+    #main{
+        width: initial;
+        margin: 0px auto;
+    }
+    #image{
+        max-width: 90%;
+    }
+}
+.tribute-title{
+    text-align: center;
+    font-weight: bolder;
+    color:var(--text-color);
+    margin-bottom: 3rem;
+}
+.tributes{
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+.tributes .time{
+    font-weight: bolder;
+    font-size: large;
+}
+.tribute-item{
+    font-size: medium;
+    color:var(--sub-color);
+    margin-bottom: 1rem;
+}
+
+article{
+  width:45%;
+  margin: -1rem auto 3rem;
+  color:var(--sub-color);
+  line-height: 1.5;
+}
+article .quote{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-weight: 900;
+    color:var(--text-color)
+}

@@ -69,9 +69,10 @@ input {
     border-top-width: 0px;
 }
 button {
-    padding: 0.5rem 2rem;
+    padding: 1rem 2rem;
     position: absolute;
     top: 50%;
+    font-size: 2rem;
     display: block;
     transform: translateY(-50%);
     left:10% ;

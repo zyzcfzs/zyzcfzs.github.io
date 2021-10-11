@@ -24,7 +24,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "/sudoku",
+  "homepage": "/weather-app",
   "browserslist": {
     "production": [
       ">0.2%",

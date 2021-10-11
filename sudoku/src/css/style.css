@@ -15,8 +15,8 @@ h1 {
     margin-bottom: 1rem;
 }
 .container {
-    width: 40vw;
-    height: 40vw;
+    width: 40vmax;
+    height: 40vmax;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -85,10 +85,6 @@ button:hover {
 @media screen and (max-width: 1024px) {
     :root {
         font-size: smaller;
-    }
-    .container {
-        width: 40vh;
-        height: 40vh;
     }
     button {
         position: static;

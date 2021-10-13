@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html,body,#root,.background{
+    height: 100%;
+}
+.background{
+    transition: background .7s;
+    padding-top: 4rem;
+}
+#quote-box{
+    background-color: #ffffff;
+    width: 30rem;
+    padding: 3rem;
+    border-radius: 5px;
+    margin: auto;
+
+}
+#text{
+    font-size: x-large;
+}
+#author{
+    margin-top: 1.5rem;
+text-align: right;
+}
+button{
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    border: none;
+    order:2;
+}
+.shares{
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: space-between;
+    
+}
+.info,.info a{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: small;
+    color:#ffffff
+}

@@ -3,6 +3,7 @@ import React from 'react';
 import { sudoku } from './suduku';
 
 const Solver = () => {
+    /* Define global refs and states */
     let initialValue = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -17,15 +18,43 @@ const Solver = () => {
     let container = React.useRef(null);
     const [data, setData] = React.useState(initialValue);
     const [solving, setSolving] = React.useState(false);
+    const currentEle = React.useRef(null);
     const focusCoords = React.useRef([0, 0]);
     const [solved, setSolved] = React.useState(false);
     React.useEffect(() => {
-        const [row, col] = focusCoords.current;
-        const selector = `.row:nth-child(${row + 1}) .col:nth-child(${
-            col + 1
-        }) input`;
-        document.querySelector(selector)?.focus();
+        currentEle.current?.focus?.();
     }, [data]);
+    function handleUserSubmit() {
+        if (solved === false) {
+            // disable the button while solving sudoku
+            setSolving(true);
+            try {
+                setData(sudoku(data));
+            } catch (error) {
+                container.current.classList.add('animate__shakeX');
+                container.current.classList.add('danger');
+                setData(initialValue);
+                setTimeout(() => {
+                    container.current.classList.remove('animate__shakeX');
+                    container.current.classList.remove('danger');
+                }, 800);
+                focusCoords.current = [0, 0];
+                setSolving(false);
+                return false;
+            }
+        } else {
+            setData(initialValue);
+            focusCoords.current = [0, 0];
+        }
+        // re-enable the button and  change the state of button text.
+        setSolved(!solved);
+        setSolving(false);
+    }
+    /**
+      handle input changes when input tag's value change
+      @function handleChange 
+      @param {Event} evt - default event object
+     **/
     function handleChange(evt) {
         const { row, col } = evt.target.dataset;
         if (evt.nativeEvent.inputType === 'deleteContentBackward') {
@@ -36,15 +65,22 @@ const Solver = () => {
             });
             return false;
         }
+        // if the last user input is not a number, ignore them.
         if (/\d$/.test(evt.target.value) === false) {
             return false;
         }
         setData((data) => {
             let newData = data.map((val) => val.slice());
+            // only take the last valid digit
             newData[row][col] = Number(evt.target.value.slice(-1));
             return newData;
         });
     }
+    /**
+    function that changes focusCoords ref based when user press arrow keys
+     @function handleKeydown
+     @param {Event} evt - default event obj 
+    **/
     function handleKeydown(evt) {
         let code = evt.code.toLowerCase();
         let [row, col] = focusCoords.current;
@@ -73,11 +109,24 @@ const Solver = () => {
             setData(data.slice());
         }
     }
+    /**
+      this is a util function which bind currentEle ref based on current focus coords.
+      @function localInput
+      @param {number} row
+      @param {number} col
+     **/
+    function locateInput(row, col) {
+        const [currentRow, currentCol] = focusCoords.current;
+        if (currentCol === col && currentRow === row) {
+            return currentEle;
+        }
+        return null;
+    }
     return (
         <React.Fragment>
             <div
                 ref={container}
-                className='container animate__animated animate__fast'
+                className='container animate__animated animate__faster'
                 onKeyDown={handleKeydown}
             >
                 {data.map((val, row) => {
@@ -85,25 +134,27 @@ const Solver = () => {
                         <div className='row' key={Math.random()}>
                             {val.map((val, col) => {
                                 return (
-                                    <div className='col' key={Math.random()}>
+                                    <div
+                                        className={
+                                            row === focusCoords.current[0] &&
+                                            col === focusCoords.current[1]
+                                                ? 'col active'
+                                                : 'col'
+                                        }
+                                        key={Math.random()}
+                                    >
                                         <div className='word'>
                                             <input
+                                                ref={locateInput(row, col)}
                                                 type='tel'
-                                                onFocus={(evt) => {
-                                                    evt.target.parentElement.parentElement.classList.add(
-                                                        'active'
-                                                    );
+                                                onClick={(evt) => {
                                                     const { row, col } =
                                                         evt.target.dataset;
                                                     focusCoords.current = [
                                                         +row,
                                                         +col,
                                                     ];
-                                                }}
-                                                onBlur={(evt) => {
-                                                    evt.target.parentElement.parentElement.classList.remove(
-                                                        'active'
-                                                    );
+                                                    setData(data.slice());
                                                 }}
                                                 data-row={row}
                                                 data-col={col}
@@ -121,32 +172,7 @@ const Solver = () => {
             <button
                 disabled={solving ? true : false}
                 style={{ backgroundColor: solved ? 'red' : 'greenyellow' }}
-                onClick={() => {
-                    if (solved === false) {
-                        setSolving(true)
-                        try {
-                            setData(sudoku(data));
-                        } catch (error) {
-                            container.current.classList.add('animate__shakeX');
-                            container.current.classList.add('danger');
-                            setData(initialValue);
-                            setTimeout(() => {
-                                container.current.classList.remove(
-                                    'animate__shakeX'
-                                );
-                                container.current.classList.remove('danger');
-                            }, 1000);
-                            focusCoords.current = [0, 0];
-                            setSolving(false);
-                            return false;
-                        } 
-                    } else {
-                        setData(initialValue);
-                        focusCoords.current = [0, 0];
-                    }
-                    setSolved(!solved);
-                    setSolving(false);
-                }}
+                onClick={handleUserSubmit}
             >
                 {!solved ? 'Solve' : 'Reset'}
             </button>

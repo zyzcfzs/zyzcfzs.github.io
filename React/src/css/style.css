@@ -86,4 +86,13 @@ a.iconlinks {
     #quote-box {
         width: 95%;
     }
+    :root{
+        font-size: xx-small;
+    }
+    .textbox{
+        font-size: medium;
+    }
+    .info{
+        display: none;
+    }
 }

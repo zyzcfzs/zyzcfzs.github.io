@@ -35,8 +35,12 @@ const Card = ({ theme, setTheme, randomColor }) => {
                     id='new-quote'
                     style={{ backgroundColor: theme }}
                     onClick={() => {
-                        setTheme(randomColor());
-                        getRandomQuote(quotes.current);
+                        setOpacity(0);
+                        setTimeout(() => {
+                            setTheme(randomColor());
+                            getRandomQuote(quotes.current);
+                            setOpacity(1);
+                        }, 500);
                     }}
                 >
                     New Quote

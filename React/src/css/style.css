@@ -29,6 +29,9 @@ body,
     bottom: 0;
     height: fit-content;
 }
+.textbox{
+    transition: all .5s;
+}
 #text {
     text-align: center;
     font-size: x-large;

@@ -10,7 +10,7 @@ const App = () => {
         <React.Fragment>
             <div className='background' style={{color:theme,background:theme}}>
                 <Card theme={theme} setTheme={setTheme} randomColor={randomColor}/>
-                <div className="info">By <a href="https://zyzcfzs.github.io/" target="_blank" rel="noreferrer">zyzcfzs</a></div>
+
             </div>
         </React.Fragment>
     );

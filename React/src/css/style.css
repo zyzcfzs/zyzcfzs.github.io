@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     outline: none;
@@ -6,43 +6,81 @@
     text-decoration: none;
     list-style: none;
 }
-html,body,#root,.background{
+html,
+body,
+#root,
+.background {
     height: 100%;
+    overflow: hidden;
 }
-.background{
-    transition: background .7s;
-    padding-top: 4rem;
+.background {
+    transition: background 0.7s;
 }
-#quote-box{
+#quote-box {
     background-color: #ffffff;
     width: 30rem;
     padding: 3rem;
     border-radius: 5px;
     margin: auto;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: fit-content;
 }
-#text{
+#text {
+    text-align: center;
     font-size: x-large;
 }
-#author{
+#author {
     margin-top: 1.5rem;
-text-align: right;
+    text-align: right;
 }
-button{
+
+button {
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: none;
-    order:2;
+    color: #ffffff;
+    order: 2;
 }
-.shares{
+button,.iconlinks{
+    transition: all .4s;
+}
+.iconlinks:hover,
+button:hover {
+    opacity: 0.7;
+}
+.shares {
     display: flex;
     margin-top: 1.5rem;
     justify-content: space-between;
-    
 }
-.info,.info a{
-    margin-top: 1rem;
+
+.links {
+    display: flex;
+}
+a.iconlinks {
+    all: unset;
+    margin-left: 0.3rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+}
+.iconlinks i {
+    font-size: large;
+}
+.info {
+    transform: translateY(calc(130% + 3rem));
+}
+.info,
+.info a {
     text-align: center;
     font-size: small;
-    color:#ffffff
+    color: #ffffff;
+}
+@media screen and (max-width: 576px) {
+    #quote-box {
+        width: 95%;
+    }
 }

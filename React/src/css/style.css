@@ -30,7 +30,7 @@ body,
     height: fit-content;
 }
 .textbox{
-    transition: all .5s;
+    transition:opacity .5s;
 }
 #text {
     text-align: center;

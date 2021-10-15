@@ -1,6 +1,12 @@
 export function textAction(data){
     return {
         type:"TEXT",
-        data:data
+        data
+    }
+}
+export function toggleAction(item){
+    return {
+        type:"TOGGLE",
+        item
     }
 }

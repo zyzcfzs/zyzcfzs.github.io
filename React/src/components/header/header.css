@@ -14,5 +14,6 @@ button{
     margin-right: 1rem;
 }
 button:hover{
+    cursor: pointer;
     color:#56DCAA
 }

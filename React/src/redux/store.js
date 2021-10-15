@@ -1,3 +1,5 @@
-import { createStore } from 'redux'
-import { textReducer } from "./reducer"
-export const store =createStore(textReducer)
+import { createStore } from 'redux';
+import { rootReducer } from './reducer';
+export const store = createStore(
+    rootReducer,
+);

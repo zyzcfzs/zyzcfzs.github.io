@@ -6,6 +6,7 @@ import Header from './header/header';
 const Editor = () => {
     const dispatch = useDispatch();
     const { mode } = useSelector((state) => state.toggle);
+    const [textValue,setTextValue] = React.useState(utils.TEXT)
     return (
         <div
             className={
@@ -15,10 +16,12 @@ const Editor = () => {
             <Header title='Editor'></Header>
             <textarea
                 id='editor'
-                value={utils.TEXT}
+                value={textValue}
                 className={utils.expandCheck(mode, 'editor')}
                 onChange={(evt) => {
                     dispatch(textAction(evt.target.value));
+                    setTextValue(evt.target.value)
+
                 }}
             ></textarea>
         </div>

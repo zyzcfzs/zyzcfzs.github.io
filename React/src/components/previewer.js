@@ -1,20 +1,18 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import * as utils from '../utils';
+import { expandCheck } from '../utils';
 import Header from './header/header';
 const Previewer = () => {
     const text = useSelector((state) => state.text);
     const { mode } = useSelector((state) => state.toggle);
     return (
         <div
-            className={utils.hideElement(
-                mode === 'editor',
-                'previewer shadow-block'
-            )}
+            hidden={mode==="editor"}
+            className="previewer shadow-block"
         >
             <Header title='Preview'></Header>
             <div
-                className={utils.expandCheck(mode, 'preview')}
+                className={expandCheck(mode, 'preview')}
                 dangerouslySetInnerHTML={{ __html: text }}
                 id='preview'
             ></div>

@@ -13,6 +13,7 @@ const Header = ({ title }) => {
             </h2>
             <button
                 onClick={() => {
+                    
                     if (active === false) {
                         dispatch(toggleAction('origin'));
                         return setActive(!active);

@@ -1,6 +1,6 @@
 import marked from 'marked';
 import { combineReducers } from 'redux';
-import { TEXT } from '../utils';
+import { TEXT, TEXT_TYPE, TOGGLE_TYPE } from '../constant';
 const defaultText = marked(TEXT, {
     breaks: true,
     gfm: true,
@@ -10,7 +10,7 @@ const defaultToggle = {
     mode: 'origin',
 };
 function textReducer(state = defaultText, { type, data }) {
-    if (type === 'TEXT') {
+    if (type === TEXT_TYPE) {
         return marked(data, {
             gfm: true,
             breaks: true,
@@ -20,7 +20,7 @@ function textReducer(state = defaultText, { type, data }) {
     return state;
 }
 function toggleReducer(state = defaultToggle, { type, item }) {
-    if (type === 'TOGGLE') {
+    if (type === TOGGLE_TYPE) {
         return { ...state, mode: item };
     }
     return state;

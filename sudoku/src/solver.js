@@ -147,6 +147,7 @@ const Solver = () => {
                                             <input
                                                 ref={locateInput(row, col)}
                                                 type='tel'
+                                                
                                                 onClick={(evt) => {
                                                     const { row, col } =
                                                         evt.target.dataset;

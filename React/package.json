@@ -28,7 +28,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "/markdown",
+  "homepage": "/sudoku",
   "browserslist": {
     "production": [
       ">0.2%",

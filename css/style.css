@@ -128,6 +128,9 @@ img {
     background-color: transparent;
     color: #ff7f50;
 }
+.about::first-letter {
+    initial-letter: 2;
+}
 #profile-link button {
     position: relative;
     left: 50%;

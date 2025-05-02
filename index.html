@@ -1,521 +1,653 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Jason Zhang</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link
-            href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+            rel="icon"
+            href="https://thumbs.dreamstime.com/b/logo-sign-zj-jz-icon-double-letters-logotype-z-j-logo-sign-zj-jz-icon-double-letters-logotype-z-j-269923745.jpg"
+            type="image/jpeg"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yanzhe (Jason) Zhang | Business Analytics</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
+        <!-- Bootstrap Icons -->
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
             rel="stylesheet"
-            href="libs/font-awesome/css/font-awesome.min.css"
         />
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            .section {
+                padding: 4rem 0;
+            }
+            .section:nth-of-type(even) {
+                background-color: #f8f9fa;
+            }
+            header {
+                background: #f8f9fa;
+                padding: 4rem 0;
+            }
+            .section-title {
+                margin-bottom: 2rem;
+                position: relative;
+            }
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -0.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 4px;
+                background: #0d6efd;
+            }
+            .profile-img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid #0d6efd;
+                margin-bottom: 1rem;
+            }
+            .edu-logo,
+            .card-icon,
+            .cert-logo,
+            .award-logo {
+                width: 40px;
+                height: auto;
+                margin-right: 1rem;
+            }
+            .skill-badge {
+                margin: 0.3rem;
+            }
+            .fixed-width {
+                max-width: 700px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        </style>
     </head>
-
     <body>
-        <div id="mobile-menu-open" class="shadow-large">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </div>
-        <!-- End #mobile-menu-toggle -->
-        <header>
-            <div id="mobile-menu-close">
-                <span>Close</span>
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </div>
-            <ul id="menu" class="shadow">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <!-- <li>
-                    <a href="#experience">Experience</a>
-                </li> -->
-                <li>
-                    <a href="#education">Education</a>
-                </li>
-                <li>
-                    <a href="#certfication">Certfication</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </header>
-        <!-- End header -->
-
-        <div id="lead">
-            <div id="lead-content">
-                <h1>Yanzhe Zhang (Jason)</h1>
-                <h2>Business Analytics and Finance</h2>
-                <a href="./asset/Jason.Zhang.pdf" class="btn-rounded-white"
-                    >Download My Resume</a
+        <!-- Navbar -->
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
+        >
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Jason Zhang</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
                 >
-            </div>
-            <!-- End #lead-content -->
-
-            <div id="lead-overlay"></div>
-
-            <div id="lead-down">
-                <span>
-                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                </span>
-            </div>
-            <!-- End #lead-down -->
-        </div>
-        <!-- End #lead -->
-
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h2 class="heading">About Me</h2>
-                        <img
-                            src="./images/35916D_Zhang_085.JPG"
-                            style="max-width: 100%; height: auto"
-                        />
-                    </div>
-                    <div class="col-md-8 about">
-                        I am currently pursuing
-                        a Master of science in Business Analytics at SMU Cox
-                        School of Business and building upon my undergraduate
-                        degree in Financial Analysis and Risk Management from
-                        the University of Waterloo. I am passionate about
-                        mathematics, finance, and business analytics.
-                        <h4>Key Highlights:</h4>
-                        <ul>
-                            <li>
-                                Academic Excellence: Recipient of the University
-                                of Waterloo President's Scholarship
-                            </li>
-                            <li>
-                                Professional Development: Passed CFA Level I and
-                                II examinations on first attempts
-                            </li>
-                            <li>
-                                Proficiency: Skilled in Python, R, MATLAB,
-                                JavaScript, SQL, Excel, Word, Powerpoint and
-                                Power BI
-                            </li>
-                            <li>
-                                Obtained the Microsoft Office Specialist: Expert
-                                (Microsoft 365 Apps) which is the highest level
-                                in the MOS program
-                            </li>
-                            <li>
-                                Language Skills: Fluent in English and Mandarin
-                                Chinese
-                            </li>
-                        </ul>
-                        <h4>My expertise includes:</h4>
-                        <ul>
-                            <li>Data modeling and analysis</li>
-                            <li>
-                                Securities trading and investment strategies
-                            </li>
-                            <li>Data-driven problem-solving</li>
-                            <li>
-                                Quantitative methods and statistical analysis
-                            </li>
-                        </ul>
-                        I'm passionate about leveraging data insights to solve
-                        complex business challenges, particularly at the
-                        intersection of finance and analytics. My diverse
-                        interests, from soccer to classical music, contribute to
-                        a well-rounded perspective in my professional endeavors.
-                        I am happy to connect and reach out to anyone and I am
-                        always willing to help.
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End #about -->
-        <div id="experience" class="background-alt">
-            <h2 class="heading">Experience</h2>
-            <div id="experience-timeline">
-                <div data-date="January 2025 – May 2025">
-                    <h3>Oracle</h3>
-                    <h4>Oracle Customer Trigger Research Team Leader</h4>
-                    <p>
-                        
-As an Oracle Customer Trigger Research Team Leader, I led a team to analyze customer behavior, predict trends, and optimize engagement strategies using Oracle tools. I streamlined workflows, ensured data accuracy, and delivered insights that improved retention and acquisition efforts.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- End #experience -->
-
-        <div id="education" class="background-alt">
-            <h2 class="heading">Education</h2>
-            <div class="education-block">
-                <h3>Southern Methodist University, Cox School of Business</h3>
-                <span class="education-date">Aug 2024 - May 2025</span>
-                <h4>Master of Science in Business Analytics</h4>
-                <h4>Cumulative GPA: 3.981/4.00</h4>
-                <ul>
-                    <li>
-                        Excelling in Business Analytics supported by my
-                        exceptional cumulative GPA of 3.962 which is positioned
-                        in the top tier of the cohort
-                    </li>
-                    <li>
-                        Developing expertise in translating data insights into
-                        actionable business strategies through coursework in
-                        business analytics, aligning with the focus on driving
-                        value and efficiency for clients
-                    </li>
-                    <li>
-                        Gaining experience in project-based learning,
-                        collaborating with diverse teams to solve real-world
-                        business problems, mirroring the collaborative nature of
-                        consulting work
-                    </li>
-                </ul>
-            </div>
-            <!-- End .education-block -->
-
-            <div class="education-block">
-                <h3>University of Waterloo</h3>
-                <span class="education-date">Sep 2019 - Jun 2024</span>
-                <h4>
-                    Bachelor of Mathematics in Financial Analysis and Risk
-                    Management
-                </h4>
-                <h4>Cumulative GPA: 3.28/4.00</h4>
-
-                <ul>
-                    <li>
-                        Recognized for academic achievement with the University
-                        of Waterloo President's Scholarship in 2020
-                    </li>
-                    <li>
-                        Demonstrated proficiency in investments, accounting,
-                        taxation, and financial statement analysis
-                    </li>
-                    <li>
-                        Developed analytical skills through coursework in
-                        statistics, probability, optimization, and differential
-                        equations
-                    </li>
-                </ul>
-            </div>
-            <!-- End .education-block -->
-        </div>
-        <!-- End #education -->
-
-        <div id="certfication" class="optional-section">
-            <h2 class="heading">Certification</h2>
-
-            <div class="optional-section-block">
-                <h3>Chartered Financial Analyst Program Level III Candidate</h3>
-                <ul>
-                    <li>
-                        Passed CFA Level I, II Examinations on the first attempt
-                        in Nov 2023 and May 2024 respectively
-                    </li>
-                    <li>
-                        Developed financial modeling skills through analyzing
-                        financial statements, estimating free cash flows, and
-                        evaluating capital budgeting decisions
-                    </li>
-                    <li>
-                        Strengthened areas of weakness through self-study and
-                        review of quantitative methods, financial reporting,
-                        fixed income, and ethics
-                    </li>
-                </ul>
-            </div>
-            <div class="optional-section-block">
-                <h3>
-                    Microsoft Certified: Power BI Data Analyst Associate certification
-                </h3>
-                <ul>
-                    <li>
-                        Proficient in designing intuitive dashboards and reports with Power BI, transforming raw data into actionable insights for informed decision-making.
-                    </li>
-                    <li>
-                        Skilled in creating robust data models, optimizing data flows, and implementing DAX calculations to enhance reporting efficiency and accuracy.
-                    </li>
-                    <li>
-                        Experienced in leveraging Power BI to analyze complex datasets, uncover trends, and deliver impactful solutions that drive business performance.
-                    </li>
-                </ul>
-            </div>
-            <!-- End .optional-section-block -->
-            <div class="optional-section-block">
-                <h3>
-                    Microsoft Office Specialist: Expert (Microsoft 365 Apps)
-                </h3>
-                <ul>
-                    <li>
-                        Attained Microsoft Office Specialist: Expert
-                        certification, the highest level of Microsoft Office
-                        Specialist Program, demonstrating mastery of Microsoft
-                        Office Software
-                    </li>
-                    <li>
-                        Executed advanced data analysis using complex Excel
-                        functions, pivot tables, and data modeling for
-                        actionable insights
-                    </li>
-                    <li>
-                        Streamlined document creation through advanced Word
-                        automation and collaborative features while creating
-                        impactful PowerPoint presentations
-                    </li>
-                </ul>
-            </div>
-            <!-- End .optional-section-block -->
-        </div>
-        <!-- End #certfication -->
-
-        <div id="projects" class="background-alt">
-            <h2 class="heading">Projects</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="https://i.imgur.com/8zqawKH.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="https://zyzcfzs.shinyapps.io/Database_Final/"><h2>DFW Music Booking App</h2></a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="/asset/drum.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="/drum"><h2>Drum Machine</h2></a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <!-- End .project -->
-
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="/quote"><h2>Random Quote Machine</h2></a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="/calc"><h2>Javascript Calculator</h2></a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="/asset/sudoku.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="/sudoku"><h2>Sudoku Solver</h2></a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="/asset/markdown.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="/markdown"><h2>Markdown Preview</h2></a>
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-                    <div class="project shadow-large">
-                        <div class="project-image">
-                            <img
-                                src="/asset/weather.png"
-                                width="150"
-                                height="150"
-                            />
-                        </div>
-                        <!-- End .project-image -->
-                        <div class="project-info">
-                            <a href="/weather-app"
-                                ><h2>Weather application</h2></a
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience"
+                                >Experience</a
                             >
-                        </div>
-                        <!-- End .project-info -->
-                    </div>
-
-                    <!-- End .project -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#certifications"
+                                >Certifications</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#awards">Awards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <!-- End #projects -->
+        </nav>
 
-        <div id="skills">
-            <h2 class="heading">Skills</h2>
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Microsoft Excel Expert</li>
-                <li>Microsoft Office Suite Expert</li>
-                <li>Microsoft Powerpoint</li>
-                <li>Microsoft Word Expert</li>
-                <li>Linux</li>
-                <li>Bloomberg Terminal</li>
-                <li>Microsoft Power BI</li>
-                <li>FactSet</li>
-            </ul>
-        </div>
-        <!-- End #skills -->
-
-        <div id="contact">
-            <h2>Get in Touch</h2>
-            <div id="contact-form">
-                <form
-                    method="POST"
-                    action="https://formspree.io/zyzwmzr4@gmail.com"
+        <!-- Header / About -->
+        <header id="about">
+            <div class="container text-center">
+                <img
+                    src="https://zyzcfzs.github.io/images/image.png"
+                    alt="Yanzhe (Jason) Zhang"
+                    class="profile-img"
+                />
+                <h1 class="display-4 fw-bold">Yanzhe (Jason) Zhang</h1>
+                <p class="lead">
+                    I’m Yanzhe (Jason) Zhang, a Business Analytics professional
+                    with an MS from SMU and a Mathematics degree from Waterloo.
+                    I transform complex data into clear insights—building
+                    predictive models for Oracle, optimizing supply chains for
+                    American Airlines, and creating community impact through
+                    data-driven solutions. Passionate about Python, SQL, and
+                    interactive dashboards, I thrive on turning information into
+                    strategic advantage.
+                </p>
+                <a
+                    href="https://zyzcfzs.github.io/asset/Resume.pdf"
+                    class="btn btn-primary mt-3"
+                    download
+                    >Download Resume</a
                 >
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="Contact request from personal website"
-                    />
-                    <input
-                        type="email"
-                        name="_replyto"
-                        placeholder="Your email"
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        placeholder="Your message"
-                        required
-                    ></textarea>
-                    <button type="submit">Send</button>
-                </form>
             </div>
-            <!-- End #contact-form -->
-        </div>
-        <!-- End #contact -->
+        </header>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5 copyright">
-                        <p>
-                            Copyright &copy;
-                            <span id="current-year">2024</span> Yanzhe Zhang
-                        </p>
+        <main>
+            <!-- Education -->
+            <section id="education" class="section">
+                <div class="container">
+                    <h2 class="text-center section-title">Education</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <img
+                                    src="https://www.smu.edu/-/media/site/brand/2022/logo-guidelines/athletics/smulogo_informalperuna_digitalonly_br.png"
+                                    alt="SMU Logo"
+                                    class="edu-logo"
+                                />
+                                <div>
+                                    <h5>
+                                        Southern Methodist University, Cox
+                                        School of Business
+                                    </h5>
+                                    <p class="mb-1">
+                                        Master of Science in Business Analytics
+                                    </p>
+                                    <p class="text-muted mb-0">
+                                        GPA: 3.981/4.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png"
+                                    alt="Waterloo Logo"
+                                    class="edu-logo"
+                                />
+                                <div>
+                                    <h5>University of Waterloo</h5>
+                                    <p class="mb-1">
+                                        Bachelor of Mathematics in Financial
+                                        Analysis and Risk Management
+                                    </p>
+                                    <p class="text-muted mb-0">
+                                        GPA: 3.70/4.00
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-2 top">
-                        <span id="to-top">
-                            <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                        </span>
+                </div>
+            </section>
+
+            <section id="experience" class="section">
+                <div class="container">
+                    <h2 class="text-center section-title">Work Experience</h2>
+                    <div class="row g-4">
+                        <!-- Entry 1 -->
+                        <div class="col-md-6">
+                            <div
+                                class="p-4 bg-white shadow-sm rounded d-flex align-items-start"
+                            >
+                                <img
+                                    src="https://blog.smu.edu/saes/files/2025/04/logo-1.jpg"
+                                    alt="SMU ADSA Logo"
+                                    class="edu-logo"
+                                />
+                                <div>
+                                    <h5>
+                                        Class Checker, SMU ADSA
+                                        <small class="text-muted"
+                                            >May 2, 2025</small
+                                        >
+                                    </h5>
+                                    <p class="mb-0">
+                                        Coordinated class sign-ins and monitored
+                                        student-athlete participation to ensure
+                                        academic accountability and NCAA
+                                        eligibility.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Entry 2 -->
+                        <div class="col-md-6">
+                            <div
+                                class="p-4 bg-white shadow-sm rounded d-flex align-items-start"
+                            >
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-O3VgBAQ3Vz2WrOPIOQYe9u2Dxz5KogPmg&s"
+                                    alt="Varsity Logo"
+                                    class="edu-logo"
+                                />
+                                <div>
+                                    <h5>
+                                        Independent Tutor, Varsity
+                                        <small class="text-muted"
+                                            >Present</small
+                                        >
+                                    </h5>
+                                    <p class="mb-0">
+                                        Delivered tailored tutoring in business
+                                        analytics and quantitative subjects,
+                                        designing data-driven lesson plans that
+                                        enhanced student comprehension and
+                                        outcomes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-sm-5 social">
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://www.github.com/zyzcfzs"
-                                    target="_blank"
-                                    ><i
-                                        class="fa fa-github"
-                                        aria-hidden="true"
-                                    ></i
-                                ></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.facebook.com/people/Jason-Zhang/pfbid02nBcXiigPf1etWjh9EQNCcKdqV8n9U9uVov5YSE8K3rwo28AdProwgvBgPDvaLmRrl/"
-                                    target="_blank"
-                                    ><i
-                                        class="fa fa-facebook"
-                                        aria-hidden="true"
-                                    ></i
-                                ></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.linkedin.com/in/jasonzhang99/"
-                                    target="_blank"
-                                    ><i
-                                        class="fa fa-linkedin"
-                                        aria-hidden="true"
-                                    ></i
-                                ></a>
-                            </li>
-                            <li>
-                                <a
-                                    href="mailto:zyzwmzr4@gmail.com"
-                                    target="_blank"
-                                    ><i
-                                        class="fa fa-envelope"
-                                        aria-hidden="true"
-                                    ></i
-                                ></a>
-                            </li>
-                            <li>
-                                <a href="tel:+14692265709" target="_blank"
-                                    ><i
-                                        class="fa fa-phone"
-                                        aria-hidden="true"
-                                    ></i
-                                ></a>
-                            </li>
-                        </ul>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section">
+                <div class="container">
+                    <h2 class="text-center section-title">Projects</h2>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/2560px-Oracle_logo.svg.png"
+                                        alt="Oracle Logo"
+                                        class="card-icon"
+                                    />
+                                    <div>
+                                        <h5>
+                                            Oracle Customer Trigger Analysis
+                                        </h5>
+                                        <p>
+                                            Analyzed 50,000+ sessions, built
+                                            ensemble models and dashboards,
+                                            delivering insights that optimized
+                                            Oracle’s digital engagement
+                                            strategy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://s202.q4cdn.com/986123435/files/doc_downloads/logos/american-airlines/THUMB-aa_aa__ahz_4cp_grd_pos-(1).png"
+                                        alt="American Airlines Logo"
+                                        class="card-icon"
+                                    />
+                                    <div>
+                                        <h5>
+                                            American Airlines & SMU ITOM
+                                            Competition
+                                        </h5>
+                                        <p>
+                                            Built supply chain optimization
+                                            model using Tableau, Excel, Alteryx
+                                            & KNIME, earning finalist status and
+                                            presenting to executives.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUATOVOBbekpyxwguXlOo9Kl8G4f5T38tPJw&s"
+                                        alt="St. Philip’s Logo"
+                                        class="card-icon"
+                                    />
+                                    <div>
+                                        <h5>
+                                            St. Philip’s Arts Center Consulting
+                                        </h5>
+                                        <p>
+                                            Developed budget and staffing models
+                                            to align revenue streams with
+                                            operational costs for sustainable
+                                            community programming.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgfkpelQH2IF40OIDCFqwfeu63kVKhIpzew&s"
+                                        alt="Database App Logo"
+                                        class="card-icon"
+                                    />
+                                    <div>
+                                        <h5>
+                                            <a
+                                                href="https://github.com/zyzcfzs/Database-Project"
+                                                target="_blank"
+                                                >DFW Music Venue Booking App</a
+                                            >
+                                        </h5>
+                                        <p>
+                                            Simulated booking experiences with
+                                            an R Shiny & MySQL app featuring
+                                            interactive visualizations and user
+                                            workflows.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6idrBxJLAZFHgRvIbzOJCjHfjI80GGuG6zw&s"
+                                        alt="AI News App Logo"
+                                        class="card-icon"
+                                    />
+                                    <div>
+                                        <h5>
+                                            <a
+                                                href="https://121-group3.netlify.app/"
+                                                target="_blank"
+                                                >AI-Powered News Generator</a
+                                            >
+                                        </h5>
+                                        <p>
+                                            Leveraged AI to generate
+                                            personalized news summaries,
+                                            demonstrating front-end development,
+                                            API integration, and UX design
+                                            skills.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certifications" class="section">
+                <div class="container">
+                    <h2 class="text-center section-title">Certifications</h2>
+                    <ul class="list-unstyled">
+                        <li class="d-flex align-items-start mb-4">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWMUWauyppnSBOY5LXJcIedTmX4tCRUYBIQ&s"
+                                alt="CFA Logo"
+                                class="cert-logo"
+                            />
+                            <div>
+                                <strong>CFA Level III Candidate</strong>
+                                <p class="mb-0">
+                                    Represents the highest standard in
+                                    investment analysis and portfolio
+                                    management, demonstrating expertise in
+                                    financial ethics, quantitative methods, and
+                                    asset valuation.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-4">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/1200px-Microsoft_icon.svg.png"
+                                alt="Microsoft Logo"
+                                class="cert-logo"
+                            />
+                            <div>
+                                <strong
+                                    >Microsoft Office Specialist & Power BI Data
+                                    Analyst</strong
+                                >
+                                <p class="mb-0">
+                                    Validated proficiency in Excel, Word,
+                                    PowerPoint, and Power BI, enabling advanced
+                                    data modeling, visualization, and analytics
+                                    on Azure.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-4">
+                            <img
+                                src="https://pbs.twimg.com/profile_images/824272617066692608/qbrXbQX__400x400.jpg"
+                                alt="Bloomberg Terminal Logo"
+                                class="cert-logo"
+                            />
+                            <div>
+                                <strong>Bloomberg Market Concepts</strong>
+                                <p class="mb-0">
+                                    E-learning foundation in equities, fixed
+                                    income, FX, and economics using Bloomberg’s
+                                    industry-leading terminal.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-4">
+                            <img
+                                src="https://images.seeklogo.com/logo-png/38/3/factset-logo-png_seeklogo-385569.png"
+                                alt="FactSet Logo"
+                                class="cert-logo"
+                            />
+                            <div>
+                                <strong>FactSet Essentials</strong>
+                                <p class="mb-0">
+                                    Training on FactSet’s financial data
+                                    platform, focusing on research, portfolio
+                                    analysis, and customized reporting tools.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Awards -->
+            <section id="awards" class="section">
+                <div class="container">
+                    <h2 class="text-center section-title">Awards</h2>
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://higherlogicdownload.s3.amazonaws.com/BETAGAMMASIGMA/a8e50d81-26f2-4c75-9216-826808f3da50/UploadedImages/Logos/BGS_logos/2019/Stacked_Clear.png"
+                                        alt="Beta Gamma Sigma Logo"
+                                        class="award-logo"
+                                    />
+                                    <div>
+                                        <h5>Beta Gamma Sigma</h5>
+                                        <p>
+                                            International honor society
+                                            recognizing the top 10% of business
+                                            students at AACSB-accredited
+                                            programs for academic excellence and
+                                            leadership.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://content.manhattan.edu/life/_images/in-body/AlphaIotaDelta.jpg"
+                                        alt="Alpha Iota Delta Logo"
+                                        class="award-logo"
+                                    />
+                                    <div>
+                                        <h5>Alpha Iota Delta</h5>
+                                        <p>
+                                            Honor society for analytics and
+                                            information management, celebrating
+                                            students with outstanding
+                                            achievements in data-driven
+                                            disciplines.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm border-0">
+                                <div class="card-body d-flex align-items-start">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jFVLlcnqO8tViOILaqtAcWVDF9VEA_A1XQ&s"
+                                        alt="Cox Legacy Award Logo"
+                                        class="award-logo"
+                                    />
+                                    <div>
+                                        <h5>Cox Legacy Award</h5>
+                                        <p>
+                                            SMU Business Leadership Center honor
+                                            recognizing students who exemplify
+                                            leadership, innovation, and
+                                            community impact in business.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="section">
+                <div class="container">
+                    <h2 class="text-center section-title">Skills</h2>
+                    <div class="text-center">
+                        <span class="badge bg-primary skill-badge">HTML</span>
+                        <span class="badge bg-primary skill-badge">CSS</span>
+                        <span class="badge bg-primary skill-badge"
+                            >JavaScript</span
+                        >
+                        <span class="badge bg-primary skill-badge">Python</span>
+                        <span class="badge bg-primary skill-badge">SQL</span>
+                        <span class="badge bg-primary skill-badge">R</span>
+                        <span class="badge bg-primary skill-badge">React</span>
+                        <span class="badge bg-primary skill-badge"
+                            >Alteryx</span
+                        >
+                        <span class="badge bg-primary skill-badge">Azure</span>
+                        <span class="badge bg-primary skill-badge"
+                            >Bloomberg Terminal</span
+                        >
+                        <span class="badge bg-primary skill-badge"
+                            >FactSet</span
+                        >
+                        <span class="badge bg-primary skill-badge">Linux</span>
+                        <span class="badge bg-primary skill-badge"
+                            >Excel Expert</span
+                        >
+                        <span class="badge bg-primary skill-badge"
+                            >Office Suite Expert</span
+                        >
+                        <span class="badge bg-primary skill-badge"
+                            >Power BI</span
+                        >
+                        <span class="badge bg-primary skill-badge"
+                            >PowerPoint</span
+                        >
+                        <span class="badge bg-primary skill-badge"
+                            >Word Expert</span
+                        >
+                        <span class="badge bg-primary skill-badge"
+                            >Tableau</span
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-light py-4">
+            <div
+                class="container d-flex justify-content-between align-items-center"
+            >
+                <!-- Left: Copyright -->
+                <div class="text-muted">&copy; 2025 Yanzhe Zhang</div>
+
+                <!-- Center: Back to top -->
+                <div>
+                    <a href="#about" class="text-muted text-decoration-none">
+                        <i class="bi bi-arrow-up-circle fs-3"></i>
+                    </a>
+                </div>
+
+                <!-- Right: Social / Contact Icons -->
+                <div>
+                    <a
+                        href="https://github.com/zyzcfzs"
+                        target="_blank"
+                        class="text-muted text-decoration-none fs-4 me-3"
+                    >
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/jasonzhang99"
+                        target="_blank"
+                        class="text-muted text-decoration-none fs-4 me-3"
+                    >
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100094779712633"
+                        target="_blank"
+                        class="text-muted text-decoration-none fs-4 me-3"
+                    >
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a
+                        href="weixin://dl/chat?Qgross"
+                        class="text-muted text-decoration-none fs-4 me-3"
+                    >
+                        <i class="bi bi-wechat"></i>
+                    </a>
+                    <a
+                        href="mailto:zhangjason@smu.edu"
+                        class="text-muted text-decoration-none fs-4 me-3"
+                    >
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                    <a
+                        href="tel:4692265709"
+                        class="text-muted text-decoration-none fs-4"
+                    >
+                        <i class="bi bi-telephone-fill"></i>
+                    </a>
                 </div>
             </div>
         </footer>
-        <!-- End footer -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/scripts.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

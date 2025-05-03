@@ -78,6 +78,24 @@
                 margin: 0 auto;
             }
         </style>
+        <style>
+  /* Dark theme based on user preference */
+  @media (prefers-color-scheme: dark) {
+    body { background-color: #121212; color: #e1e1e1; }
+    header, .section:nth-of-type(even) { background-color: #1a1a1a; }
+    .navbar-light { background-color: #1f1f1f !important; }
+    .navbar-light .navbar-brand,
+    .navbar-light .nav-link { color: #ccc !important; }
+    .bg-white, .bg-light, .card, .p-4 { background-color: #1e1e1e !important; }
+    .shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.5) !important; }
+    .text-muted { color: #aaa !important; }
+    .section-title::after { background: #0d6efd; }
+    .badge.bg-primary,
+    .btn-primary { background-color: #0d6efd; border-color: #0d6efd; }
+    .btn-primary:hover { background-color: #0b5ed7; }
+  }
+</style>
+
     </head>
     <body>
         <!-- Navbar -->
@@ -667,5 +685,12 @@ modeling, visualizing, and analyzing data with Microsoft Power BI.
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+  // If the OS/theme preference is dark, ensure we load dark styles ASAP
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.documentElement.classList.add('dark');
+  }
+</script>
     </body>
 </html>

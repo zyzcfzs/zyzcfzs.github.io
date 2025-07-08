@@ -1,710 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link
-            rel="icon"
-            href="https://thumbs.dreamstime.com/b/logo-sign-zj-jz-icon-double-letters-logotype-z-j-logo-sign-zj-jz-icon-double-letters-logotype-z-j-269923745.jpg"
-            type="image/jpeg"
-        />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Yanzhe (Jason) Zhang | Business Analytics</title>
-        <!-- Bootstrap CSS -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-        />
-        <!-- Bootstrap Icons -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-            rel="stylesheet"
-        />
-        <!-- Google Font -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <style>
+
+<head>
+    <link rel="icon"
+        href="https://thumbs.dreamstime.com/b/logo-sign-zj-jz-icon-double-letters-logotype-z-j-logo-sign-zj-jz-icon-double-letters-logotype-z-j-269923745.jpg"
+        type="image/jpeg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yanzhe (Jason) Zhang | Business Analytics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section:nth-of-type(even) {
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: #0d6efd;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0d6efd;
+            margin-bottom: 1rem;
+        }
+
+        .edu-logo,
+        .card-icon,
+        .cert-logo,
+        .award-logo {
+            width: 40px;
+            height: auto;
+            margin-right: 1rem;
+        }
+
+        .skill-badge {
+            margin: 0.3rem;
+            font-size: larger;
+        }
+
+        .fixed-width {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    </style>
+    <style>
+        /* Dark theme based on user preference */
+        @media (prefers-color-scheme: dark) {
             body {
-                font-family: 'Roboto', sans-serif;
+                background-color: #121212;
+                color: #e1e1e1;
             }
-            .section {
-                padding: 4rem 0;
-            }
+
+            header,
             .section:nth-of-type(even) {
-                background-color: #f8f9fa;
+                background-color: #1a1a1a;
             }
-            header {
-                background: #f8f9fa;
-                padding: 4rem 0;
+
+            .navbar-light {
+                background-color: #1f1f1f !important;
             }
-            .section-title {
-                margin-bottom: 2rem;
-                position: relative;
+
+            .navbar-light .navbar-brand,
+            .navbar-light .nav-link {
+                color: #ccc !important;
             }
+
+            .bg-white,
+            .bg-light,
+            .card,
+            .p-4 {
+                background-color: #1e1e1e !important;
+            }
+
+            .shadow-sm {
+                box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .5) !important;
+            }
+
+            .text-muted {
+                color: #aaa !important;
+            }
+
             .section-title::after {
-                content: '';
-                position: absolute;
-                bottom: -0.5rem;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 60px;
-                height: 4px;
                 background: #0d6efd;
             }
-            .profile-img {
-                width: 150px;
-                height: 150px;
-                object-fit: cover;
-                border-radius: 50%;
-                border: 4px solid #0d6efd;
-                margin-bottom: 1rem;
-            }
-            .edu-logo,
-            .card-icon,
-            .cert-logo,
-            .award-logo {
-                width: 40px;
-                height: auto;
-                margin-right: 1rem;
-            }
-            .skill-badge {
-                margin: 0.3rem;
-                font-size: larger;
-            }
-            .fixed-width {
-                max-width: 700px;
-                width: 100%;
-                margin: 0 auto;
-            }
-        </style>
-        <style>
-  /* Dark theme based on user preference */
-  @media (prefers-color-scheme: dark) {
-    body { background-color: #121212; color: #e1e1e1; }
-    header, .section:nth-of-type(even) { background-color: #1a1a1a; }
-    .navbar-light { background-color: #1f1f1f !important; }
-    .navbar-light .navbar-brand,
-    .navbar-light .nav-link { color: #ccc !important; }
-    .bg-white, .bg-light, .card, .p-4 { background-color: #1e1e1e !important; }
-    .shadow-sm { box-shadow: 0 .125rem .25rem rgba(0,0,0,.5) !important; }
-    .text-muted { color: #aaa !important; }
-    .section-title::after { background: #0d6efd; }
-    .badge.bg-primary,
-    .btn-primary { background-color: #0d6efd; border-color: #0d6efd; }
-    .btn-primary:hover { background-color: #0b5ed7; }
 
-  /* Make card text and links readable */
-  .card h5,
-  .card p,
-  .card a {
-    color: #e1e1e1 !important;
-  }
-  }
-</style>
+            .badge.bg-primary,
+            .btn-primary {
+                background-color: #0d6efd;
+                border-color: #0d6efd;
+            }
 
-    </head>
+            .btn-primary:hover {
+                background-color: #0b5ed7;
+            }
+
+            /* Make card text and links readable */
+            .card h5,
+            .card p,
+            .card a {
+                color: #e1e1e1 !important;
+            }
+        }
+    </style>
+
+</head>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECHL7SZK8Z"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-ECHL7SZK8Z');
+    gtag('config', 'G-ECHL7SZK8Z');
 </script>
-    <body>
-        <!-- Navbar -->
-        <nav
-            class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top"
-        >
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Jason Zhang</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#awards">Awards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / About -->
+    <header id="about">
+        <div class="container text-center">
+            <img src="https://zyzcfzs.github.io/images/image.png" alt="Yanzhe (Jason) Zhang" class="profile-img" />
+            <h1 class="display-4 fw-bold">Yanzhe (Jason) Zhang</h1>
+            <p class="lead">
+                I’m Yanzhe (Jason) Zhang, a young professional with a Master
+                of Science in Business Analytics from SMU and a Bachlor of
+                Mathmatics in Financial Analysis and Risk Management from
+                the University of Waterloo. I transform complex data into
+                clear insights—building predictive models for Oracle,
+                optimizing supply chains for American Airlines, and creating
+                community impact through data-driven solutions. Passionate
+                about Python, SQL, Office and Power BI, I thrive on turning
+                data and information into strategic advantage.
+            </p>
+            <a href="https://media.licdn.com/dms/document/media/v2/D562DAQEUauYkWAYmlw/profile-treasury-document-pdf-analyzed/B56ZfqkgtsGQAk-/0/1751987130963?e=1752710400&v=beta&t=BHtunZ9nA5WCKGk_QtnB3BAsyrohK7Jp40vVPjQwspQ" class="btn btn-primary mt-3" download>Download My
+                Resume Here</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Education -->
+        <section id="education" class="section">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="#">Jason Zhang</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience"
-                                >Experience</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#certifications"
-                                >Certifications</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#awards">Awards</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                    </ul>
+                <h2 class="text-center section-title">Education</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start">
+                            <img src="https://www.smu.edu/-/media/site/brand/2022/logo-guidelines/athletics/smulogo_informalperuna_digitalonly_br.png"
+                                alt="SMU Logo" class="edu-logo" />
+                            <div>
+                                <h5>
+                                    Southern Methodist University, Cox School of Business
+                                </h5>
+                                <p class="mb-1">
+                                    Master of Science in Business Analytics
+                                </p>
+                                <p class="text-muted mb-0">
+                                    GPA: 3.981/4.00
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Honors: Merit Scholarship
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-start">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png"
+                                alt="Waterloo Logo" class="edu-logo" />
+                            <div>
+                                <h5>University of Waterloo</h5>
+                                <p class="mb-1">
+                                    Bachelor of Mathematics in Financial
+                                    Analysis and Risk Management
+                                </p>
+                                <p class="text-muted mb-0">
+                                    GPA: 3.70/4.00
+                                </p>
+                                <p class="text-muted mb-0">
+                                    Honors: President's Scholarship
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </section>
 
-        <!-- Header / About -->
-        <header id="about">
-            <div class="container text-center">
-                <img
-                    src="https://zyzcfzs.github.io/images/image.png"
-                    alt="Yanzhe (Jason) Zhang"
-                    class="profile-img"
-                />
-                <h1 class="display-4 fw-bold">Yanzhe (Jason) Zhang</h1>
-                <p class="lead">
-                    I’m Yanzhe (Jason) Zhang, a young professional with a Master
-                    of Science in Business Analytics from SMU and a Bachlor of
-                    Mathmatics in Financial Analysis and Risk Management from
-                    the University of Waterloo. I transform complex data into
-                    clear insights—building predictive models for Oracle,
-                    optimizing supply chains for American Airlines, and creating
-                    community impact through data-driven solutions. Passionate
-                    about Python, SQL, Office and Power BI, I thrive on turning
-                    data and information into strategic advantage.
-                </p>
-                <a
-                    href="https://zyzcfzs.github.io/asset/Resume.pdf"
-                    class="btn btn-primary mt-3"
-                    download
-                    >Download My Resume Here</a
-                >
-            </div>
-        </header>
-
-        <main>
-            <!-- Education -->
-            <section id="education" class="section">
-                <div class="container">
-                    <h2 class="text-center section-title">Education</h2>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-start">
-                                <img
-                                    src="https://www.smu.edu/-/media/site/brand/2022/logo-guidelines/athletics/smulogo_informalperuna_digitalonly_br.png"
-                                    alt="SMU Logo"
-                                    class="edu-logo"
-                                />
-                                <div>
-                                    <h5>
-                                        Southern Methodist University, Cox School of Business
-                                    </h5>
-                                    <p class="mb-1">
-                                        Master of Science in Business Analytics
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        GPA: 3.981/4.00
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Honors: Merit Scholarship
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="d-flex align-items-start">
-                                <img
-                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/1200px-University_of_Waterloo_seal.svg.png"
-                                    alt="Waterloo Logo"
-                                    class="edu-logo"
-                                />
-                                <div>
-                                    <h5>University of Waterloo</h5>
-                                    <p class="mb-1">
-                                        Bachelor of Mathematics in Financial
-                                        Analysis and Risk Management
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        GPA: 3.70/4.00
-                                    </p>
-                                    <p class="text-muted mb-0">
-                                        Honors: President's Scholarship
-                                    </p>
-                                </div>
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Work Experience</h2>
+                <div class="row g-4">
+                    <!-- Entry 1 -->
+                    <div class="col-md-6">
+                        <div class="rounded d-flex align-items-start">
+                            <img src="https://blog.smu.edu/saes/files/2025/04/logo-1.jpg" alt="SMU ADSA Logo"
+                                class="edu-logo" />
+                            <div>
+                                <h5>
+                                    Class Checker, SMU ADSA
+                                    <small class="text-muted">May, 2025</small>
+                                </h5>
+                                <p class="mb-0">
+                                    Coordinated class sign-ins and monitored
+                                    student-athlete participation to ensure
+                                    academic accountability and NCAA
+                                    eligibility.
+                                </p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="experience" class="section">
-                <div class="container">
-                    <h2 class="text-center section-title">Work Experience</h2>
-                    <div class="row g-4">
-                        <!-- Entry 1 -->
-                        <div class="col-md-6">
-                            <div
-                                class="rounded d-flex align-items-start"
-                            >
-                                <img
-                                    src="https://blog.smu.edu/saes/files/2025/04/logo-1.jpg"
-                                    alt="SMU ADSA Logo"
-                                    class="edu-logo"
-                                />
-                                <div>
-                                    <h5>
-                                        Class Checker, SMU ADSA
-                                        <small class="text-muted"
-                                            >May, 2025</small
-                                        >
-                                    </h5>
-                                    <p class="mb-0">
-                                        Coordinated class sign-ins and monitored
-                                        student-athlete participation to ensure
-                                        academic accountability and NCAA
-                                        eligibility.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Entry 2 -->
-                        <div class="col-md-6">
-                            <div
-                                class="rounded d-flex align-items-start"
-                            >
-                                <img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK-O3VgBAQ3Vz2WrOPIOQYe9u2Dxz5KogPmg&s"
-                                    alt="Varsity Logo"
-                                    class="edu-logo"
-                                />
-                                <div>
-                                    <h5>
-                                        Independent Tutor, Varsity
-                                        <small class="text-muted"
-                                            >Present</small
-                                        >
-                                    </h5>
-                                    <p class="mb-0">
-                                        Delivered tailored tutoring in business
-                                        analytics and quantitative subjects,
-                                        designing data-driven lesson plans that
-                                        enhanced student comprehension and
-                                        outcomes.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects -->
-            <section id="projects" class="section">
-                <div class="container">
-                    <h2 class="text-center section-title">Projects</h2>
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/2560px-Oracle_logo.svg.png"
-                                        alt="Oracle Logo"
-                                        class="card-icon"
-                                    />
-                                    <div>
-                                        <h5>
-                                            Oracle Customer Trigger Capstone Project (Team Leader) 
-                                        </h5>
-                                        <p>
-                                            Analyzed 50,000+ sessions, built
-                                            ensemble models and dashboards,
-                                            delivering insights that optimized
-                                            Oracle’s digital engagement
-                                            strategy.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://s202.q4cdn.com/986123435/files/doc_downloads/logos/american-airlines/THUMB-aa_aa__ahz_4cp_grd_pos-(1).png"
-                                        alt="American Airlines Logo"
-                                        class="card-icon"
-                                    />
-                                    <div>
-                                        <h5>
-                                            American Airlines & SMU ITOM
-                                            Competition (Finalist)
-                                        </h5>
-                                        <p>
-                                            Built supply chain optimization
-                                            model using Tableau, Excel, Alteryx
-                                            & KNIME, earning finalist status and
-                                            presenting to executives.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUATOVOBbekpyxwguXlOo9Kl8G4f5T38tPJw&s"
-                                        alt="St. Philip’s Logo"
-                                        class="card-icon"
-                                    />
-                                    <div>
-                                        <h5>
-                                            St. Philip’s Arts Center Consulting
-                                        </h5>
-                                        <p>
-                                            Developed budget and staffing models
-                                            to align revenue streams with
-                                            operational costs for sustainable
-                                            community programming.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgfkpelQH2IF40OIDCFqwfeu63kVKhIpzew&s"
-                                        alt="Database App Logo"
-                                        class="card-icon"
-                                    />
-                                    <div>
-                                        <h5>
-                                            <a
-                                                href="https://github.com/zyzcfzs/Database-Project"
-                                                target="_blank"
-                                                >DFW Music Venue Booking App</a
-                                            >
-                                        </h5>
-                                        <p>
-                                            Simulated booking experiences with
-                                            an R Shiny & MySQL app featuring
-                                            interactive visualizations and user
-                                            workflows.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6idrBxJLAZFHgRvIbzOJCjHfjI80GGuG6zw&s"
-                                        alt="AI News App Logo"
-                                        class="card-icon"
-                                    />
-                                    <div>
-                                        <h5>
-                                            <a
-                                                href="https://121-group3.netlify.app/"
-                                                target="_blank"
-                                                >AI-Powered News Generator</a
-                                            >
-                                        </h5>
-                                        <p>
-                                            Leveraged AI to generate
-                                            personalized news summaries,
-                                            demonstrating front-end development,
-                                            API integration, and UX design
-                                            skills.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Certifications -->
-            <section id="certifications" class="section">
-                <div class="container">
-                    <h2 class="text-center section-title">Certifications</h2>
-                    <ul class="list-unstyled">
-                        <li class="d-flex align-items-start mb-4">
-                            <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWMUWauyppnSBOY5LXJcIedTmX4tCRUYBIQ&s"
-                                alt="CFA Logo"
-                                class="cert-logo"
-                            />
-                            <div>
-                                <strong>CFA Level III Candidate</strong>
-                                <p class="mb-0">
-                                    Current CFA Level III Candidate. CFA represents the highest standard in
-                                    investment analysis and portfolio
-                                    management.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-4">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/1200px-Microsoft_icon.svg.png"
-                                alt="Microsoft Logo"
-                                class="cert-logo"
-                            />
-                            <div>
-                                <strong
-                                    >Microsoft Office Specialist Expert Certification</strong
-                                >
-                                <p class="mb-0">
-                                    Obtained the highest level of Microsoft Office Specialist Program, demonstrating expert of
-proficiency at Microsoft Office Suite including Word, Excel and PowerPoint.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-4">
-                            <img
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/1200px-Microsoft_icon.svg.png"
-                                alt="Microsoft Logo"
-                                class="cert-logo"
-                            />
-                            <div>
-                                <strong
-                                    >Microsoft Power BI Data Analyst Associate Certification</strong
-                                >
-                                <p class="mb-0">
-                                    Demonstrate methods and best practices that align with business and technical requirements for
-modeling, visualizing, and analyzing data with Microsoft Power BI.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-4">
-                            <img
-                                src="https://pbs.twimg.com/profile_images/824272617066692608/qbrXbQX__400x400.jpg"
-                                alt="Bloomberg Terminal Logo"
-                                class="cert-logo"
-                            />
-                            <div>
-                                <strong>Bloomberg Market Concepts</strong>
-                                <p class="mb-0">
-                                    Demonstrate proficiency in equities, fixed
-                                    income, FX, and economics using Bloomberg’s
-                                    industry-leading terminal.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="d-flex align-items-start mb-4">
-                            <img
-                                src="https://images.seeklogo.com/logo-png/38/3/factset-logo-png_seeklogo-385569.png"
-                                alt="FactSet Logo"
-                                class="cert-logo"
-                            />
-                            <div>
-                                <strong>FactSet Essentials</strong>
-                                <p class="mb-0">
-                                    Training on FactSet’s financial data
-                                    platform, focusing on research, portfolio
-                                    analysis, and customized reporting tools.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <!-- Awards -->
-            <section id="awards" class="section">
-                <div class="container">
-                    <h2 class="text-center section-title">Awards</h2>
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://higherlogicdownload.s3.amazonaws.com/BETAGAMMASIGMA/a8e50d81-26f2-4c75-9216-826808f3da50/UploadedImages/Logos/BGS_logos/2019/Stacked_Clear.png"
-                                        alt="Beta Gamma Sigma Logo"
-                                        class="award-logo"
-                                    />
-                                    <div>
-                                        <h5>Beta Gamma Sigma</h5>
-                                        <p>
-                                            A lifetime member of Beta Gamma Sigma (BGS). BGS recognizes and honors the top 10% of undergraduate students, top 20% of graduate students and all doctoral candidates from around the world in business schools accredited by The Association to Advance Collegiate Schools of Business (AACSB).
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://content.manhattan.edu/life/_images/in-body/AlphaIotaDelta.jpg"
-                                        alt="Alpha Iota Delta Logo"
-                                        class="award-logo"
-                                    />
-                                    <div>
-                                        <h5>Alpha Iota Delta</h5>
-                                        <p>
-                                            A lifetime member of Alpha Iota Delta (AID),
-                                            the honor society for analytics and
-                                            information management, celebrating
-                                            students with outstanding
-                                            achievements in data-driven
-                                            disciplines.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card h-100 shadow-sm border-0">
-                                <div class="card-body d-flex align-items-start">
-                                    <img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jFVLlcnqO8tViOILaqtAcWVDF9VEA_A1XQ&s"
-                                        alt="Cox Legacy Award Logo"
-                                        class="award-logo"
-                                    />
-                                    <div>
-                                        <h5>Cox Legacy Award</h5>
-                                        <p>
-                                            Highest achievement in SMU Cox Business Leadership Center which honor
-                                            students who exemplify
-                                            leadership, innovation, and
-                                            community impact in business.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Skills -->
-            <section id="skills" class="section">
-                <div class="container">
-                    <h2 class="text-center section-title">Skills</h2>
-                    <div class="text-center">
-                        <span class="badge bg-primary skill-badge">HTML</span>
-                        <span class="badge bg-primary skill-badge">CSS</span>
-                        <span class="badge bg-primary skill-badge"
-                            >JavaScript</span
-                        >
-                        <span class="badge bg-primary skill-badge">Python</span>
-                        <span class="badge bg-primary skill-badge">SQL</span>
-                        <span class="badge bg-primary skill-badge">R</span>
-                        <span class="badge bg-primary skill-badge">React</span>
-                        <span class="badge bg-primary skill-badge"
-                            >Alteryx</span
-                        >
-                        <span class="badge bg-primary skill-badge">Azure</span>
-                        <span class="badge bg-primary skill-badge"
-                            >Bloomberg Terminal</span
-                        >
-                        <span class="badge bg-primary skill-badge"
-                            >FactSet</span
-                        >
-                        <span class="badge bg-primary skill-badge">Linux</span>
-                        <span class="badge bg-primary skill-badge"
-                            >Excel Expert</span
-                        >
-                        <span class="badge bg-primary skill-badge"
-                            >Office Suite Expert</span
-                        >
-                        <span class="badge bg-primary skill-badge"
-                            >Power BI</span
-                        >
-                        <span class="badge bg-primary skill-badge"
-                            >PowerPoint</span
-                        >
-                        <span class="badge bg-primary skill-badge"
-                            >Word Expert</span
-                        >
-                        <span class="badge bg-primary skill-badge"
-                            >Tableau</span
-                        >
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer -->
-        <footer class="bg-light py-4">
-            <div
-                class="container d-flex justify-content-between align-items-center"
-            >
-                <!-- Left: Copyright -->
-                <div class="text-muted">&copy; 2025 Yanzhe Zhang</div>
-
-                <!-- Center: Back to top -->
-                <div>
-                    <a href="#about" class="text-muted text-decoration-none">
-                        <i class="bi bi-arrow-up-circle fs-3"></i>
-                    </a>
-                </div>
-
-                <!-- Right: Social / Contact Icons -->
-                <div>
-                    <a
-                        href="https://github.com/zyzcfzs"
-                        target="_blank"
-                        class="text-muted text-decoration-none fs-4 me-3"
-                    >
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a
-                        href="https://linkedin.com/in/jasonzhang99"
-                        target="_blank"
-                        class="text-muted text-decoration-none fs-4 me-3"
-                    >
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100094779712633"
-                        target="_blank"
-                        class="text-muted text-decoration-none fs-4 me-3"
-                    >
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a
-                        href="weixin://dl/chat?Qgross"
-                        class="text-muted text-decoration-none fs-4 me-3"
-                    >
-                        <i class="bi bi-wechat"></i>
-                    </a>
-                    <a
-                        href="mailto:zhangjason@smu.edu"
-                        class="text-muted text-decoration-none fs-4 me-3"
-                    >
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-                    <a
-                        href="tel:4692265709"
-                        class="text-muted text-decoration-none fs-4"
-                    >
-                        <i class="bi bi-telephone-fill"></i>
-                    </a>
                 </div>
             </div>
-        </footer>
+        </section>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Projects</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/2560px-Oracle_logo.svg.png"
+                                    alt="Oracle Logo" class="card-icon" />
+                                <div>
+                                    <h5>
+                                        Oracle Customer Trigger Capstone Project (Team Leader)
+                                    </h5>
+                                    <p>
+                                        Analyzed 50,000+ sessions, built
+                                        ensemble models and dashboards,
+                                        delivering insights that optimized
+                                        Oracle’s digital engagement
+                                        strategy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://s202.q4cdn.com/986123435/files/doc_downloads/logos/american-airlines/THUMB-aa_aa__ahz_4cp_grd_pos-(1).png"
+                                    alt="American Airlines Logo" class="card-icon" />
+                                <div>
+                                    <h5>
+                                        American Airlines & SMU ITOM
+                                        Competition (Finalist)
+                                    </h5>
+                                    <p>
+                                        Built supply chain optimization
+                                        model using Tableau, Excel, Alteryx
+                                        & KNIME, earning finalist status and
+                                        presenting to executives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUATOVOBbekpyxwguXlOo9Kl8G4f5T38tPJw&s"
+                                    alt="St. Philip’s Logo" class="card-icon" />
+                                <div>
+                                    <h5>
+                                        St. Philip’s Arts Center Consulting
+                                    </h5>
+                                    <p>
+                                        Developed budget and staffing models
+                                        to align revenue streams with
+                                        operational costs for sustainable
+                                        community programming.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDgfkpelQH2IF40OIDCFqwfeu63kVKhIpzew&s"
+                                    alt="Database App Logo" class="card-icon" />
+                                <div>
+                                    <h5>
+                                        <a href="https://github.com/zyzcfzs/Database-Project" target="_blank">DFW Music
+                                            Venue Booking App</a>
+                                    </h5>
+                                    <p>
+                                        Simulated booking experiences with
+                                        an R Shiny & MySQL app featuring
+                                        interactive visualizations and user
+                                        workflows.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6idrBxJLAZFHgRvIbzOJCjHfjI80GGuG6zw&s"
+                                    alt="AI News App Logo" class="card-icon" />
+                                <div>
+                                    <h5>
+                                        <a href="https://121-group3.netlify.app/" target="_blank">AI-Powered News
+                                            Generator</a>
+                                    </h5>
+                                    <p>
+                                        Leveraged AI to generate
+                                        personalized news summaries,
+                                        demonstrating front-end development,
+                                        API integration, and UX design
+                                        skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script>
-  // If the OS/theme preference is dark, ensure we load dark styles ASAP
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.documentElement.classList.add('dark');
-  }
-</script>
-    </body>
+        <!-- Certifications -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Certifications</h2>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://brm-workforce.oracle.com/pdf/certview/images/MYSQLDBA80OCP.png"
+                            alt="Oracle Logo" class="cert-logo" />
+                        <div>
+                            <strong>Oracle Certified Professional, MySQL 8.0 Database Administrator</strong>
+                            <p class="mb-0">
+                                Proven skills to administer, backup, replicate, optimize, and secure the MySQL 8.0 database. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://brm-workforce.oracle.com/pdf/certview/images/MYSQLPRG80OCP.png"
+                            alt="Oracle Logo" class="cert-logo" />
+                        <div>
+                            <strong>Oracle Certified Professional, MySQL 8.0 Database Developer</strong>
+                            <p class="mb-0">
+                                Proven skills to develop and design the MySQL 8.0 database. 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDWMUWauyppnSBOY5LXJcIedTmX4tCRUYBIQ&s"
+                            alt="CFA Logo" class="cert-logo" />
+                        <div>
+                            <strong>CFA Level III Candidate</strong>
+                            <p class="mb-0">
+                                Current CFA Level III Candidate. CFA represents the highest standard in
+                                investment analysis and portfolio
+                                management.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/1200px-Microsoft_icon.svg.png"
+                            alt="Microsoft Logo" class="cert-logo" />
+                        <div>
+                            <strong>Microsoft Office Specialist Expert Certification</strong>
+                            <p class="mb-0">
+                                Obtained the highest level of Microsoft Office Specialist Program, demonstrating expert
+                                of
+                                proficiency at Microsoft Office Suite including Word, Excel and PowerPoint.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Microsoft_icon.svg/1200px-Microsoft_icon.svg.png"
+                            alt="Microsoft Logo" class="cert-logo" />
+                        <div>
+                            <strong>Microsoft Power BI Data Analyst Associate Certification</strong>
+                            <p class="mb-0">
+                                Demonstrate methods and best practices that align with business and technical
+                                requirements for
+                                modeling, visualizing, and analyzing data with Microsoft Power BI.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://pbs.twimg.com/profile_images/824272617066692608/qbrXbQX__400x400.jpg"
+                            alt="Bloomberg Terminal Logo" class="cert-logo" />
+                        <div>
+                            <strong>Bloomberg Market Concepts</strong>
+                            <p class="mb-0">
+                                Demonstrate proficiency in equities, fixed
+                                income, FX, and economics using Bloomberg’s
+                                industry-leading terminal.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="d-flex align-items-start mb-4">
+                        <img src="https://images.seeklogo.com/logo-png/38/3/factset-logo-png_seeklogo-385569.png"
+                            alt="FactSet Logo" class="cert-logo" />
+                        <div>
+                            <strong>FactSet Essentials</strong>
+                            <p class="mb-0">
+                                Training on FactSet’s financial data
+                                platform, focusing on research, portfolio
+                                analysis, and customized reporting tools.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="awards" class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Awards</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://higherlogicdownload.s3.amazonaws.com/BETAGAMMASIGMA/a8e50d81-26f2-4c75-9216-826808f3da50/UploadedImages/Logos/BGS_logos/2019/Stacked_Clear.png"
+                                    alt="Beta Gamma Sigma Logo" class="award-logo" />
+                                <div>
+                                    <h5>Beta Gamma Sigma</h5>
+                                    <p>
+                                        A lifetime member of Beta Gamma Sigma (BGS). BGS recognizes and honors the top
+                                        10% of undergraduate students, top 20% of graduate students and all doctoral
+                                        candidates from around the world in business schools accredited by The
+                                        Association to Advance Collegiate Schools of Business (AACSB).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://content.manhattan.edu/life/_images/in-body/AlphaIotaDelta.jpg"
+                                    alt="Alpha Iota Delta Logo" class="award-logo" />
+                                <div>
+                                    <h5>Alpha Iota Delta</h5>
+                                    <p>
+                                        A lifetime member of Alpha Iota Delta (AID),
+                                        the honor society for analytics and
+                                        information management, celebrating
+                                        students with outstanding
+                                        achievements in data-driven
+                                        disciplines.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body d-flex align-items-start">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-jFVLlcnqO8tViOILaqtAcWVDF9VEA_A1XQ&s"
+                                    alt="Cox Legacy Award Logo" class="award-logo" />
+                                <div>
+                                    <h5>Cox Legacy Award</h5>
+                                    <p>
+                                        Highest achievement in SMU Cox Business Leadership Center which honor
+                                        students who exemplify
+                                        leadership, innovation, and
+                                        community impact in business.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="text-center section-title">Skills</h2>
+                <div class="text-center">
+                    <span class="badge bg-primary skill-badge">HTML</span>
+                    <span class="badge bg-primary skill-badge">CSS</span>
+                    <span class="badge bg-primary skill-badge">JavaScript</span>
+                    <span class="badge bg-primary skill-badge">Python</span>
+                    <span class="badge bg-primary skill-badge">SQL</span>
+                    <span class="badge bg-primary skill-badge">R</span>
+                    <span class="badge bg-primary skill-badge">React</span>
+                    <span class="badge bg-primary skill-badge">Alteryx</span>
+                    <span class="badge bg-primary skill-badge">Azure</span>
+                    <span class="badge bg-primary skill-badge">Bloomberg Terminal</span>
+                    <span class="badge bg-primary skill-badge">FactSet</span>
+                    <span class="badge bg-primary skill-badge">Linux</span>
+                    <span class="badge bg-primary skill-badge">Excel Expert</span>
+                    <span class="badge bg-primary skill-badge">Office Suite Expert</span>
+                    <span class="badge bg-primary skill-badge">Power BI</span>
+                    <span class="badge bg-primary skill-badge">PowerPoint</span>
+                    <span class="badge bg-primary skill-badge">Word Expert</span>
+                    <span class="badge bg-primary skill-badge">Tableau</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Left: Copyright -->
+            <div class="text-muted">&copy; 2025 Yanzhe Zhang</div>
+
+            <!-- Center: Back to top -->
+            <div>
+                <a href="#about" class="text-muted text-decoration-none">
+                    <i class="bi bi-arrow-up-circle fs-3"></i>
+                </a>
+            </div>
+
+            <!-- Right: Social / Contact Icons -->
+            <div>
+                <a href="https://github.com/zyzcfzs" target="_blank" class="text-muted text-decoration-none fs-4 me-3">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/jasonzhang99" target="_blank"
+                    class="text-muted text-decoration-none fs-4 me-3">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100094779712633" target="_blank"
+                    class="text-muted text-decoration-none fs-4 me-3">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="weixin://dl/chat?Qgross" class="text-muted text-decoration-none fs-4 me-3">
+                    <i class="bi bi-wechat"></i>
+                </a>
+                <a href="mailto:zhangjason@smu.edu" class="text-muted text-decoration-none fs-4 me-3">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                <a href="tel:4692265709" class="text-muted text-decoration-none fs-4">
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // If the OS/theme preference is dark, ensure we load dark styles ASAP
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</body>
+
 </html>
